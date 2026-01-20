@@ -15,5 +15,9 @@ The extension's settings can be configured by clicking on the extension icon in 
 *   **Min Newlines to Hide:** The minimum number of newlines a post must contain to be hidden.
 *   **Min Average Line Length:** The minimum average length of lines in a post to be hidden.
 *   **Blocked Keywords:** A comma-separated list of keywords. If a post contains any of these keywords, it will be hidden.
-*   **Min Emoji Sentences to Hide:** The minimum number of sentences starting with an emoji for a post to be hidden.
+*   **Min Emoji Sentences to Hide:** The minimum number of sentences ending with an emoji for a post to be hidden.
 *   **Debug Mode:** When enabled, the extension will print debugging information to the browser's console.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
