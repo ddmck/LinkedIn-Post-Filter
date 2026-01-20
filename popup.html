@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <title>LinkedIn Post Filter</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        width: 250px;
+      }
+      h1 {
+        font-size: 1.2em;
+      }
+      label {
+        display: block;
+        margin-top: 10px;
+      }
+      input {
+        width: 100%;
+      }
+      button {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>LinkedIn Post Filter</h1>
+    <label for="newline-threshold">Min Newlines to Hide:</label>
+    <input type="number" id="newline-threshold" min="0" />
+
+    <label for="avg-line-length-threshold">Min Average Line Length:</label>
+    <input type="number" id="avg-line-length-threshold" min="0" />
+
+    <label for="blocked-keywords">Blocked Keywords (comma-separated):</label>
+    <textarea id="blocked-keywords"></textarea>
+
+    <label for="emoji-sentence-threshold">Min Emoji Sentences to Hide:</label>
+    <input type="number" id="emoji-sentence-threshold" min="0" />
+
+    <div>
+      <input type="checkbox" id="debug-mode" />
+      <label for="debug-mode">Debug Mode</label>
+    </div>
+
+    <button id="save-button">Save</button>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
